@@ -5,35 +5,42 @@ const Footer = () => {
     <div>
       {/* First Footer Section */}
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 md:px-[40px] lg:px-[80px]">
-        <aside className="flex flex-col items-start mb-8 md:mb-0 md:flex-col">
-          <img src="/src/assets/logo.png" alt="Hero.IO Logo" className="w-[65px] h-[65px] mb-4 md:mb-0 md:w-[80px] md:h-[80px]" />
-          <p className="text-center md:text-left">
+        <aside className="flex flex-col items-start mb-8 md:mb-0 md:items-start lg:items-start">
+        <img
+            src="/src/assets/logo.png"
+            alt="Hero.IO Logo"
+            className="w-[65px] h-[65px] mb-4 md:mb-0 md:w-[80px] md:h-[80px]"
+        />
+        <p className="text-left">
             Hero.IO <br />
             Building innovative solutions for your business
-          </p>
+        </p>
         </aside>
 
         {/* Services, Company, Legal Sections */}
-        <nav className="mb-6 md:mb-0">
-          <h6 className="footer-title">Features</h6>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">App Store</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Play Store</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Download</a>
+        <div className="flex space-x-15 md:space-x-40">
+        <nav className="flex flex-col space-y-4">
+            <h6 className="footer-title pb-3">Features</h6>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">App Store</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Play Store</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Download</a>
         </nav>
 
-        <nav className="mb-6 md:mb-0">
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">About Us</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Contact</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Blog</a>
+        <nav className="flex flex-col space-y-4">
+            <h6 className="footer-title pb-3">Company</h6>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">About Us</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Contact</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Blog</a>
         </nav>
 
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Terms of Use</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Privacy Policy</a>
-          <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Cookie Policy</a>
+        <nav className="flex flex-col space-y-4">
+            <h6 className="footer-title pb-3">Legal</h6>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Terms of Use</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Privacy Policy</a>
+            <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">Cookie Policy</a>
         </nav>
+        </div>
+
       </footer>
 
       {/* Second Footer Section */}
