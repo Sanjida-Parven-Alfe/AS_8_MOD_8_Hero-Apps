@@ -1,4 +1,5 @@
 import React from "react";
+import Logoimg from "../../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <footer className="footer bg-[#000d18] sm:footer-horizontal text-white p-10 md:px-[40px] lg:px-[80px]">
         <aside className="flex flex-col items-start mb-8 md:mb-0 md:items-start lg:items-start">
           <img
-            src="/src/assets/logo.png"
+            src={Logoimg}
             alt="Hero.IO Logo"
             className="w-[65px] h-[65px] mb-4 md:mb-0 md:w-[80px] md:h-[80px]"
           />
