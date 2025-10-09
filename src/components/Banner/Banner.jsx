@@ -111,7 +111,7 @@ const Banner = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="flex flex-col justify-center items-center h-auto md:h-[380px] w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] mb-[80px] py-10">
+      <div className="flex flex-col justify-center items-center h-auto md:h-[380px] w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] mb-[40px] md:mb-[80px] py-10">
         <h1 className="text-white text-[22px] md:text-[40px] font-bold text-center pb-[20px] md:pb-[40px] px-4">
           Trusted by Millions, Built for You
         </h1>

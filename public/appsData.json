@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/NWRVVF6zXvmcqspJwdFOKcQG6OlsNwpMOxED_DgB6B2BBDeWwAeWZKZxGhgqU0LQVJU",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "Forest Inc.",
+    "id": 1,
+    "description": "Focus on your tasks while growing a virtual tree.",
+    "size": 52,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "image": "https://s.cafebazaar.ir/images/icons/com.mg.smplan-3f02cb95-734f-4d0c-8d0c-225cd3f2a6c6_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "SmPlan Corp.",
+    "id": 2,
+    "description": "Manage your tasks with reminders and simple scheduling.",
+    "size": 40,
+    "reviews": 1500,
+    "ratingAvg": 4.3,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 530 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/k0p0PlV3iitTUJaBk4P2NWiMHcAKrI7gB0ap7b9sIVCcKvE9RT6MTLf1Fr5oOUMQ1nFc",
+    "title": "FLIP: Focus Timer For Study",
+    "companyName": "FLIP Tech",
+    "id": 3,
+    "description": "A Pomodoro-style timer to help you study efficiently.",
+    "size": 35,
+    "reviews": 800,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/2-coFiL20JMqVh6mWWyn1ZpkOxn90NGYkLSvj5lxlk6yBBucC5LpcLS0G_pq3xG8owbN",
+    "title": "Pomocat: Cute Pomodoro Timer",
+    "companyName": "Pomocat Studio",
+    "id": 4,
+    "description": "A cute and motivating Pomodoro timer.",
+    "size": 45,
+    "reviews": 1000,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBD2Gn8eRYqsZyiO3nPoapipaI34_FSJU_A&s",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "TimePlan Solutions",
+    "id": 5,
+    "description": "Plan and schedule your day effectively.",
+    "size": 50,
+    "reviews": 2000,
+    "ratingAvg": 4.8,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1170 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3339/3339055.png",
+    "title": "Morning Habits: Daily Routine",
+    "companyName": "MorningTech",
+    "id": 6,
+    "description": "Set up daily routines and habits to stay productive.",
+    "size": 48,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/Dp9w3L54TBZgWPB1auw22DQ7Dgzj-6iceKy_A2KgSqpbEoFKIo__WCqLxHyfDl2pZ0s",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "FocusTree Studios",
+    "id": 7,
+    "description": "Use the Pomodoro technique to grow a forest of focus.",
+    "size": 52,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 470 },
+      { "name": "5 star", "count": 690 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/gXJLTDIvxXTK6uKl2e3Od_zmrlEul1CbkgxWxjbGeDzLl4EMFsdfER2VEgqAue2v1TE",
+    "title": "Alarmy: Alarm Clock & Sleep",
+    "companyName": "Alarmy Inc.",
+    "id": 8,
+    "description": "Wake up easily with this alarm clock that helps you sleep better.",
+    "size": 60,
+    "reviews": 1300,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/xSq4JcUazZHws_cqrH9S3hBiv-Lq2kdr0NvAVg9SjEp63VDo3hbzAHdKMvwIQC4zN4Xi=w240-h480-rw",
+    "title": "TaskMaster: To-Do List",
+    "companyName": "TaskMaster LLC",
+    "id": 9,
+    "description": "Organize your tasks and get things done faster.",
+    "size": 55,
+    "reviews": 1000,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 430 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/4245/4245757.png",
+    "title": "Focus Zone: Focus Timer",
+    "companyName": "FocusTech",
+    "id": 10,
+    "description": "A simple focus timer to boost your productivity.",
+    "size": 45,
+    "reviews": 1100,
+    "ratingAvg": 4.3,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 270 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/W_usKXq5DW9fNOMDGhTme3Oza3_K1qFjZ8Hm68tgqRkGcM-VeKKTpnnsua8VqHSCxKw",
+    "title": "Study Buddy: Pomodoro Timer",
+    "companyName": "StudyCo",
+    "id": 11,
+    "description": "Enhance your study sessions using Pomodoro intervals.",
+    "size": 50,
+    "reviews": 1200,
+    "ratingAvg": 4.8,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 660 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/snWb0KyG-EkpMR77wqSTqDAXMlNlKDBV6MAOhuqnkDqrSwYboa39qSruxk3UdozXN6s",
+    "title": "Sleep Better: Sleep Tracker",
+    "companyName": "SleepTech",
+    "id": 12,
+    "description": "Track and improve your sleep patterns.",
+    "size": 60,
+    "reviews": 1500,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 720 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/mindful-man-meditating-with-icons-representing-productivity-time-management-finance_40453-16364.jpg",
+    "title": "Mindful: Meditation & Focus",
+    "companyName": "Mindful Inc.",
+    "id": 13,
+    "description": "Meditation and focus techniques to improve mental well-being.",
+    "size": 48,
+    "reviews": 1400,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 610 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/oQnd9u11H7j1g99Pzswt5LTm52g8XyMrgz0GRBX5lmzdPv2Vt7bBrOKgbVbs-gHc504=w240-h480-rw",
+    "title": "Focus Music: Concentration",
+    "companyName": "Focus Music LLC",
+    "id": 14,
+    "description": "Listen to relaxing music while you work to stay focused.",
+    "size": 35,
+    "reviews": 900,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/W2iBexz0ZGTXS8F0Z_lQ0xs_UJaAHRYQBOZKDIJOjwiO_AYP8GDVGmnjEsUAiBjnRA",
+    "title": "Productivity Timer: Focus",
+    "companyName": "ProductiveTech",
+    "id": 15,
+    "description": "Stay productive with a simple and customizable timer.",
+    "size": 44,
+    "reviews": 950,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/usqQM4hkmaKZ4anCqrxxbFw4rWVk2s5DhkwkZYeF8pRtK2XySoTX_8dZJH8irGjbdw=w240-h480-rw",
+    "title": "Mindful Focus: Timer & Relaxation",
+    "companyName": "MindFocus Corp.",
+    "id": 16,
+    "description": "A timer that helps you focus and relax with intervals.",
+    "size": 40,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/PvcM2KMkWRo7NiypAlOa0IV4lurFmAq6EpemmfUcitzl638VI4K3CNoKO0iVlRSxIMA",
+    "title": "Focus Master: Pomodoro Timer",
+    "companyName": "Focus Master Inc.",
+    "id": 17,
+    "description": "Master the Pomodoro technique to maximize focus.",
+    "size": 50,
+    "reviews": 1200,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 620 }
+    ]
+  },
+  {
+    "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/a6/55/f2/a655f2a6-5763-4698-e177-68d36782daba/source/256x256bb.jpg",
+    "title": "Taskmaster: To-Do & Reminders",
+    "companyName": "Taskmaster LLC",
+    "id": 18,
+    "description": "Manage your to-dos and set reminders for all tasks.",
+    "size": 45,
+    "reviews": 1300,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 460 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/OeG99tWSuSWWp_djQm8SCpVTqgLwpzjEkvXNw6rd5DO0lwQhs3noeDwbn-b2XcUvUNxJ",
+    "title": "Focus Timer: Concentration Booster",
+    "companyName": "FocusBoost Corp.",
+    "id": 19,
+    "description": "Increase your focus using timed intervals.",
+    "size": 42,
+    "reviews": 1000,
+    "ratingAvg": 4.3,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 470 },
+      { "name": "5 star", "count": 160 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/px4c3jZZmVo36WrWAwnX2cGIEIt1lfPPCSe2yzPyFAd3xFK6yiyyiUejHs9-c93R8g=w240-h480-rw",
+    "title": "Productivity Timer: Task Manager",
+    "companyName": "ProductivityTech",
+    "id": 20,
+    "description": "Manage tasks efficiently with a built-in timer.",
+    "size": 55,
+    "reviews": 950,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 270 }
+    ]
+  }
+]
