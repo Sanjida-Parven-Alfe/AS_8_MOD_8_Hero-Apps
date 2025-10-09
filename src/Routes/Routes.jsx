@@ -1,9 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Loader from "../components/Loader/Loader"; // তোমার Loader
+import Loader from "../components/Loader/Loader"; 
 import Root from "../pages/Root/Root";
 
-// Lazy load pages
 const Home = lazy(() => import("../pages/Home/Home"));
 const AllApplications = lazy(() => import("../pages/allApplications/allApplications"));
 const AppDetails = lazy(() => import("../pages/AppDetails/AppDetails"));

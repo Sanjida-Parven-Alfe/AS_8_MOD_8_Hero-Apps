@@ -3,8 +3,8 @@ import Logoimg from "../../assets/logo.png";
 
 const Loader = () => {
   return (
-    <div className="bg-[#f2f2f2] h-screen flex justify-center items-center">
-      <h1 className="inter-font text-[80px] font-extrabold text-[#001931] flex items-center gap-4">
+    <div className="bg-[#f2f2f2] h-[200px] md:h-screen flex justify-center items-center">
+      <h1 className="inter-font text-[40px] md:text-[80px] font-extrabold text-[#001931] flex items-center gap-4">
         L
         <img
           src={Logoimg}

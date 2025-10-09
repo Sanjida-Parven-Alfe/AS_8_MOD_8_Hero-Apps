@@ -48,16 +48,14 @@ const Installation = () => {
 
      
       <div className="flex flex-col items-center px-4 md:px-[80px] gap-4">
-        <div className="flex justify-between items-center w-full mb-4">
+        <div className="flex flex-col md:flex-row justify-center gap-2 md:justify-between items-center w-full mb-4">
           <h1 className="text-[#001931] inter-font font-semibold text-[24px]">
             ({installedApps.length}) Apps Found
           </h1>
           <select
             value={sortOrder}
             onChange={(e) => handleSort(e.target.value)}
-            className="border border-gray-300 shadow-md rounded-md px-4 py-2 pr-6 text-[#627382] 
-             transition-shadow duration-200
-             hover:shadow-lg hover:shadow-purple-300 focus:outline-none cursor-pointer" 
+            className="border border-gray-300 shadow-md rounded-md px-4 py-2 pr-6 text-[#627382] transition-shadow duration-200 hover:shadow-lg hover:shadow-purple-300 focus:outline-none cursor-pointer" 
           >
             <option value="" disabled>
               Sort By Size
@@ -77,11 +75,11 @@ const Installation = () => {
               >
                 <img
                   src={app.image}
-                  className="w-[80px] h-[80px] rounded-lg"
+                  className="w-[50px] md:w-[80px] h-[50px] md:h-[80px] rounded-lg"
                   alt={app.title}
                 />
-                <div className="flex flex-col flex-1 pl-[16px] justify-center">
-                  <h1 className="text-[#001931] inter-font text-[20px] font-medium">
+                <div className="flex flex-col flex-1 pl-[8px] md:pl-[16px] justify-center">
+                  <h1 className="text-[#001931] inter-font text-[15px] md:text-[20px] font-medium">
                     {app.title}
                   </h1>
                   <div className="flex gap-4 items-center mt-1">

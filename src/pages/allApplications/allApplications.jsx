@@ -17,7 +17,7 @@ const AllApplications = () => {
       );
       setFilteredData(filtered);
       setLoading(false);
-    }, 300); // 300ms delay for smoother UX
+    }, 300); 
 
     return () => clearTimeout(timer);
   }, [searchTerm, data]);

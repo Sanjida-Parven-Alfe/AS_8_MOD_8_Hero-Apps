@@ -104,7 +104,7 @@ const AppDetails = () => {
       />
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <div className="w-[350px] h-[350px] flex justify-center md:justify-start">
+        <div className="w-40 h-40 md:w-[350px] md:h-[350px] flex justify-center md:justify-start">
           <img
             src={app.image}
             alt={app.title}
