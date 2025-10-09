@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       {/* First Footer Section */}
       <footer className="footer bg-[#000d18] sm:footer-horizontal text-white p-10 md:px-[40px] lg:px-[80px]">
-        <aside className="flex flex-col items-start mb-8 md:mb-0 md:items-start lg:items-start">
+        <aside className="flex flex-col items-start mb-0 md:items-start lg:items-start">
           <img
             src={Logoimg}
             alt="Hero.IO Logo"
@@ -19,7 +19,7 @@ const Footer = () => {
         </aside>
 
         {/* Services, Company, Legal Sections */}
-        <div className="flex space-x-15 md:space-x-40">
+        <div className="flex space-x-10 md:space-x-40">
           <nav className="flex flex-col space-y-4">
             <h6 className="footer-title pb-3">Features</h6>
             <a className="link link-hover hover:text-[#ba8cfb] transition-colors duration-200">

@@ -8,7 +8,7 @@ const Apps = ({ data }) => {
 
   return (
     <div className="mx-[40px] md:mx-[80px]">
-      <h1 className="inter-font text-[48px] font-bold mb-2 text-[#001931] text-center">
+      <h1 className="inter-font text-[38px] md:text-[48px] font-bold mb-2 text-[#001931] text-center">
         Trending Apps
       </h1>
       <p className="inter-font text-[20px] font-normal mb-[40px] text-[#627382] text-center">

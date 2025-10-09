@@ -39,10 +39,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`rounded-none text-black font-semibold ${
+                className={`pt-0 rounded-none text-[16px] font-semibold ${
                   isActive("/")
-                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
-                    : ""
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text "
+                    : "text-black"
                 }`}
               >
                 Home
@@ -53,7 +53,7 @@ const Navbar = () => {
                 to="/all-applications"
                 className={`pt-0 rounded-none text-[16px] font-semibold ${
                   isActive("/all-applications")
-                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text "
                     : "text-black"
                 }`}
               >
@@ -66,7 +66,7 @@ const Navbar = () => {
                 to="/installation"
                 className={`pt-0 rounded-none text-[16px] font-semibold ${
                   isActive("/installation")
-                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text "
                     : "text-black"
                 }`}
               >

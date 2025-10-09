@@ -37,7 +37,7 @@ const Installation = () => {
   return (
     <div className="bg-[#f2f2f2] pb-[80px]">
      
-      <div className="flex flex-col items-center justify-center pt-[80px] pb-[40px]">
+      <div className="flex flex-col items-center justify-center pt-[40px] md:pt-[80px] pb-[40px]">
         <h1 className="text-[#001931] inter-font text-[48px] font-bold text-center pb-[10px]">
           Your Installed Apps
         </h1>
@@ -83,7 +83,7 @@ const Installation = () => {
                     {app.title}
                   </h1>
                   <div className="flex gap-4 items-center mt-1">
-                    <p className="inter-font font-normal text-[#00D390] text-[16px] flex items-center gap-1">
+                    <p className="inter-font font-normal text-[#00D390] text-[13px] md:text-[16px] flex items-center gap-1">
                       <img
                         src={downloadImg}
                         className="w-[16px] h-[16px]"
@@ -91,7 +91,7 @@ const Installation = () => {
                       />
                       {(app.downloads / 1000000).toFixed(0)}M
                     </p>
-                    <p className="inter-font font-normal text-[#FF8811] text-[16px] flex items-center gap-1">
+                    <p className="inter-font font-normal text-[#FF8811] text-[13px] md:text-[16px] flex items-center gap-1">
                       <img
                         src={ratingsImg}
                         className="w-[16px] h-[16px]"
@@ -99,7 +99,7 @@ const Installation = () => {
                       />
                       {app.ratingAvg ?? "5"}
                     </p>
-                    <p className="inter-font font-normal text-[#627382] text-[16px]">
+                    <p className="inter-font font-normal text-[#627382] text-[13px] md:text-[16px]">
                       {app.size ?? "258 MB"}
                     </p>
                   </div>
