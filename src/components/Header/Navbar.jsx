@@ -39,7 +39,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`pt-0 rounded-none text-[16px] font-semibold ${
+                className={`rounded-none text-[16px] font-semibold ${
                   isActive("/")
                     ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text "
                     : "text-black"
