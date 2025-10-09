@@ -1,6 +1,11 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation(); 
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <div className="navbar bg-white shadow-2xs px-4 md:px-8 lg:px-[80px] py-[16px]">
       <div className="navbar-start">
@@ -30,45 +35,99 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li className="rounded-none text-black hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500">
-              <a>Home</a>
+            <li>
+              <Link
+                to="/"
+                className={`rounded-none text-black font-semibold ${
+                  isActive("/")
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                    : ""
+                }`}
+              >
+                Home
+              </Link>
             </li>
-            <li className="rounded-none text-black hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500">
-              <a>Apps</a>
+            <li className="h-[24px]">
+              <Link
+                to="/all-applications"
+                className={`pt-0 rounded-none text-[16px] font-semibold ${
+                  isActive("/all-applications")
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                    : "text-black"
+                }`}
+              >
+                Apps
+              </Link>
             </li>
-            <li className="rounded-none text-black hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500">
-              <a>Installation</a>
+
+            <li>
+              <Link
+                to="/installation"
+                className={`pt-0 rounded-none text-[16px] font-semibold ${
+                  isActive("/installation")
+                    ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                    : "text-black"
+                }`}
+              >
+                Installation
+              </Link>
             </li>
           </ul>
         </div>
 
-        <a className="flex items-center gap-[4px] text-[16px] font-bold text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text cursor-pointer">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="flex items-center gap-[4px] text-[16px] font-bold text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text cursor-pointer"
+        >
           <img
             src="/src/assets/logo.png"
             className="w-[40px] h-[40px]"
             alt="logo"
           />
           HERO.IO
-        </a>
+        </Link>
       </div>
 
       {/* CENTER Buttons */}
       <div className="navbar-center hidden md:flex lg:flex">
         <ul className="menu menu-horizontal text-black px-1 py-0">
           <li className="h-[24px]">
-            <a className="pt-0 rounded-none text-black text-[16px] font-semibold hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500 ">
+            <Link
+              to="/"
+              className={`pt-0 rounded-none text-[16px] font-semibold ${
+                isActive("/")
+                  ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                  : "text-black "
+              }`}
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li className="h-[24px]">
-            <a className="pt-0 rounded-none text-black text-[16px] font-semibold hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500">
+            <Link
+              to="/all-applications"
+              className={`pt-0 rounded-none text-[16px] font-semibold ${
+                isActive("/all-applications")
+                  ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                  : "text-black"
+              }`}
+            >
               Apps
-            </a>
+            </Link>
           </li>
+
           <li className="h-[24px]">
-            <a className="pt-0 rounded-none text-black text-[16px] font-semibold hover:bg-gradient-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-transparent hover:bg-clip-text hover:border-b-2 hover:border-purple-500">
+            <Link
+              to="/installation"
+              className={`pt-0 rounded-none text-[16px] font-semibold ${
+                isActive("/installation")
+                  ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-b-2 border-purple-500"
+                  : "text-black"
+              }`}
+            >
               Installation
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -76,9 +135,9 @@ const Navbar = () => {
       {/* RIGHT Button */}
       <div className="navbar-end mt-2 md:mt-0">
         <a
-          href="https://github.com/Sanjida-Parven-Alfe" // Link to your GitHub
-          target="_blank" // Open in a new tab
-          rel="noopener noreferrer" // For security reasons
+          href="https://github.com/Sanjida-Parven-Alfe"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <button className="btn w-[140px] h-[40px] text-[16px] font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-none shadow-none hover:scale-105 hover:shadow-lg hover:from-[#bb8ffa] hover:to-[#9166f5] transition-transform duration-200 ease-in-out">
             <svg

@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import Application from "../Applications/Application";
+import { useNavigate } from "react-router-dom";
 
 const Apps = ({ data }) => {
+  const navigate = useNavigate();
   const firstEightApps = data.slice(0, 8);
 
   return (
@@ -22,7 +24,10 @@ const Apps = ({ data }) => {
 
         {/* Show All Button */}
         <div className="text-center pb-[80px] ">
-          <button className="inter-font text-[16px] shadow-none font-semibold btn btn-primary w-[145px] h-[48px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:shadow-lg hover:shadow-gray-500 hover:scale-106 transition-transform duration-300 cursor-pointer ">
+          <button
+            onClick={() => navigate("/all-applications")}
+            className="inter-font text-[16px] shadow-none font-semibold btn btn-primary w-[145px] h-[48px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:shadow-lg hover:shadow-gray-500 hover:scale-106 transition-transform duration-300 cursor-pointer"
+          >
             Show All
           </button>
         </div>
