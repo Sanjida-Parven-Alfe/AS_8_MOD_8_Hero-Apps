@@ -1,16 +1,36 @@
-# React + Vite
+# Focus & Productivity Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project is a comprehensive web application that showcases a curated collection of **focus, productivity, and task management apps**. It allows users to explore, search, and view detailed information about each app, including downloads, ratings, reviews, and app descriptions. Users can also install apps, manage them through a "My Installation" page, and sort apps by downloads. The application emphasizes productivity, focus, and efficient time management, inspired by techniques like **Pomodoro** and habit tracking.
 
-Currently, two official plugins are available:
+## App List
+This app showcases 20 applications including:
+- **Forest: Focus For Productivity**
+- **SmPlan: ToDo List With Reminder**
+- **FLIP: Focus Timer For Study**
+- **Pomocat: Cute Pomodoro Timer**
+- **Time Planner: Schedule & Tasks**
+- **Morning Habits: Daily Routine**
+- **Focus Plant: Pomodoro Forest**
+- **Alarmy: Alarm Clock & Sleep**
+- **TaskMaster: To-Do List**
+- **Focus Zone: Focus Timer**
+- **Study Buddy: Pomodoro Timer**
+- **Sleep Better: Sleep Tracker**
+- **Mindful: Meditation & Focus**
+- **Focus Music: Concentration**
+- **Productivity Timer: Focus**
+- **Mindful Focus: Timer & Relaxation**
+- **Focus Master: Pomodoro Timer**
+- **Taskmaster: To-Do & Reminders**
+- **Focus Timer: Concentration Booster**
+- **Productivity Timer: Task Manager**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React**
+- **React Router** 
+- **Tailwind CSS**
+- **LocalStorage** – To store installed apps
+- **JSON** – Fake data for apps
+- **Vite**
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
