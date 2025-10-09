@@ -1,41 +1,76 @@
-import React from "react";
-import { createBrowserRouter } from "react-router";
+import React, { lazy, Suspense } from "react";
+import { createBrowserRouter } from "react-router-dom";
+import Loader from "../components/Loader/Loader"; // তোমার Loader
 import Root from "../pages/Root/Root";
-import ErrorPage from "../pages/errorPage/ErrorPage";
-import Home from "../pages/Home/Home";
-import AllApplications from "../pages/allApplications/allApplications";
-import Installation from "../pages/Installation/Installation";
-import AppDetails from "../pages/AppDetails/AppDetails";
-import AppNotFound from "../pages/errorPage/AppNotFound";
+
+// Lazy load pages
+const Home = lazy(() => import("../pages/Home/Home"));
+const AllApplications = lazy(() => import("../pages/allApplications/allApplications"));
+const AppDetails = lazy(() => import("../pages/AppDetails/AppDetails"));
+const Installation = lazy(() => import("../pages/Installation/Installation"));
+const AppNotFound = lazy(() => import("../pages/errorPage/AppNotFound"));
+const ErrorPage = lazy(() => import("../pages/errorPage/ErrorPage"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <ErrorPage />,
+    errorElement: (
+      <Suspense fallback={<Loader />}>
+        <ErrorPage />
+      </Suspense>
+    ),
     children: [
       {
         index: true,
         loader: () => fetch("/appsData.json"),
-        Component: Home,
+        Component: () => (
+          <Suspense fallback={<Loader />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "all-applications",
         loader: () => fetch("/appsData.json"),
-        Component: AllApplications,
+        Component: () => (
+          <Suspense fallback={<Loader />}>
+            <AllApplications />
+          </Suspense>
+        ),
       },
       {
         path: "all-applications/:id",
-        Component: AppDetails,
+        Component: () => (
+          <Suspense fallback={<Loader />}>
+            <AppDetails />
+          </Suspense>
+        ),
       },
       {
         path: "installation",
-        Component: Installation,
+        Component: () => (
+          <Suspense fallback={<Loader />}>
+            <Installation />
+          </Suspense>
+        ),
       },
       {
-        path: "*",
-        Component: AppNotFound,
+        path: "app-not-found",
+        Component: () => (
+          <Suspense fallback={<Loader />}>
+            <AppNotFound />
+          </Suspense>
+        ),
       },
     ],
+  },
+  {
+    path: "*",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <ErrorPage />
+      </Suspense>
+    ),
   },
 ]);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom"; 
 import { toast, ToastContainer } from "react-toastify";
 import {
   BarChart,
@@ -30,6 +30,7 @@ const YLeftTick = ({ y, payload }) => (
 const AppDetails = () => {
   const { id } = useParams();
   const [app, setApp] = useState(null);
+  const [notFound, setNotFound] = useState(false); 
   const [installed, setInstalled] = useState(false);
 
   useEffect(() => {
@@ -37,15 +38,37 @@ const AppDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         const foundApp = data.find((item) => item.id.toString() === id);
+        if (!foundApp) {
+          setNotFound(true); 
+          return;
+        }
         setApp(foundApp);
+
+        const installedApps =
+          JSON.parse(localStorage.getItem("installedApps")) || [];
+        if (installedApps.find((a) => a.id === foundApp.id)) {
+          setInstalled(true);
+        }
       });
   }, [id]);
+
+ 
+  if (notFound) {
+    return <Navigate to="/app-not-found" replace />;
+  }
 
   if (!app) return <div className="p-12">Loading…</div>;
 
   const handleInstall = () => {
-    setInstalled(true);
-    toast.success(`${app.title} Installed Successfully!`);
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+
+    if (!installedApps.find((a) => a.id === app.id)) {
+      installedApps.push(app);
+      localStorage.setItem("installedApps", JSON.stringify(installedApps));
+      toast.success(`${app.title} Installed Successfully!`);
+      setInstalled(true);
+    }
   };
 
   const compact = (n) =>
@@ -68,7 +91,6 @@ const AppDetails = () => {
 
   return (
     <div className="p-[20px] md:p-[80px] bg-[#f2f2f2]">
-      {/* ToastContainer top-center */}
       <ToastContainer
         position="top-center"
         autoClose={3000}
@@ -132,19 +154,18 @@ const AppDetails = () => {
             onClick={handleInstall}
             disabled={installed}
             className={`mt-10 w-[239px] inline-flex items-center justify-center px-5 py-2 rounded-md text-white font-medium shadow-sm ${
-              installed ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"
+              installed
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600"
             }`}
           >
-            {installed
-              ? "Installed"
-              : `Install Now (${app.installSize || "291 MB"})`}
+            {installed ? "Installed" : `Install Now (${app.size || "291 MB"})`}
           </button>
         </div>
       </div>
 
       <div className="my-10 text-gray-500 border-t" />
 
-      {/* Ratings section */}
       <div>
         <h2 className="text-[#001931] inter-font text-[24px] font-semibold mb-4">
           Ratings
@@ -155,7 +176,7 @@ const AppDetails = () => {
               data={orderedRatingsData}
               layout="vertical"
               margin={{ top: 0, right: 20, bottom: 0, left: 0 }}
-              barSize={32} // bar height
+              barSize={32}
               barCategoryGap="22%"
             >
               <XAxis
@@ -173,7 +194,13 @@ const AppDetails = () => {
                 tickLine={false}
                 tick={<YLeftTick />}
               />
-              <Tooltip contentStyle={{ backgroundColor: "white", color: "black", fontSize: "14px" }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: "white",
+                  color: "black",
+                  fontSize: "14px",
+                }}
+              />
               <Bar dataKey="count" radius={[4, 4, 4, 4]} fill="#FF8B1A" />
             </BarChart>
           </ResponsiveContainer>
@@ -182,10 +209,13 @@ const AppDetails = () => {
 
       <div className="my-8 text-gray-400 border-t" />
 
-      {/* Description */}
       <div>
-        <h2 className="inter-font text-[24px] text-[#001931] font-semibold mb-3">Description</h2>
-        <p className="inter-font text-[#627382] text-[20px] font-normal whitespace-pre-line">{app.description}</p>
+        <h2 className="inter-font text-[24px] text-[#001931] font-semibold mb-3">
+          Description
+        </h2>
+        <p className="inter-font text-[#627382] text-[20px] font-normal whitespace-pre-line">
+          {app.description}
+        </p>
       </div>
     </div>
   );

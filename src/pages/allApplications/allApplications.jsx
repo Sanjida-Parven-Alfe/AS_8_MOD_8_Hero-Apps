@@ -1,14 +1,26 @@
-import React, { Suspense, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Application from "../Applications/Application";
 import { useLoaderData } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
 
 const AllApplications = () => {
   const data = useLoaderData();
   const [searchTerm, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState(data);
+  const [loading, setLoading] = useState(false);
 
-  const filteredData = data.filter((app) =>
-    app.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      const filtered = data.filter((app) =>
+        app.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredData(filtered);
+      setLoading(false);
+    }, 300); // 300ms delay for smoother UX
+
+    return () => clearTimeout(timer);
+  }, [searchTerm, data]);
 
   return (
     <div className="bg-[#f2f2f2]">
@@ -52,19 +64,20 @@ const AllApplications = () => {
           </label>
         </div>
 
-        <Suspense fallback={<span>Loading....</span>}>
-          {filteredData.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[16px] justify-items-center mb-[40px]">
-              {filteredData.map((singleApp) => (
-                <Application key={singleApp.id} singleApp={singleApp} />
-              ))}
-            </div>
-          ) : (
-            <div className="flex justify-center items-center h-[200px] w-full mb-[40px]">
-              <p className="text-gray-600 text-xl">No App Found</p>
-            </div>
-          )}
-        </Suspense>
+        {/* Search Loader */}
+        {loading ? (
+          <Loader />
+        ) : filteredData.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[16px] justify-items-center mb-[40px]">
+            {filteredData.map((singleApp) => (
+              <Application key={singleApp.id} singleApp={singleApp} />
+            ))}
+          </div>
+        ) : (
+          <div className="flex justify-center items-center h-[200px] w-full mb-[40px]">
+            <p className="text-gray-600 text-xl">No App Found</p>
+          </div>
+        )}
       </div>
     </div>
   );
