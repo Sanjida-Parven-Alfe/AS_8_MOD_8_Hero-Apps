@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logoimg from "../../assets/logo.png"
 
 const Navbar = () => {
   const location = useLocation(); 
@@ -81,7 +82,7 @@ const Navbar = () => {
           className="flex items-center gap-[4px] text-[16px] font-bold text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text cursor-pointer"
         >
           <img
-            src="/src/assets/logo.png"
+            src={Logoimg}
             className="w-[40px] h-[40px]"
             alt="logo"
           />
