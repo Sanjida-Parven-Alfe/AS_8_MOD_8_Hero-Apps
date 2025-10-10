@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       {/* First Footer Section */}
-      <footer className="footer bg-[#000d18] sm:footer-horizontal text-white p-5 md:px-[40px] lg:px-[80px]">
+      <footer className="footer bg-[#000d18] sm:footer-horizontal text-white p-5 md:p-[40px] ">
         <aside className="flex flex-col items-start mb-0 md:items-start lg:items-start">
           <img
             src={Logoimg}

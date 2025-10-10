@@ -64,7 +64,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/installation"
-                className={`pt-0 rounded-none text-[16px] font-semibold ${
+                className={`pt-1 rounded-none text-[16px] font-semibold ${
                   isActive("/installation")
                     ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text "
                     : "text-black"

@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Application from "../Applications/Application";
 import { useNavigate } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
 
 const Apps = ({ data }) => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Apps = ({ data }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      <Suspense fallback={<span>Loading....</span>}>
+      <Suspense fallback={<Loader />}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[16px] mb-[40px] justify-items-center">
           {firstEightApps.map((singleApp) => (
             <Application key={singleApp.id} singleApp={singleApp} />
