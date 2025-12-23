@@ -1,4 +1,3 @@
-
 # Focus & Productivity Apps
 
 This project is a web application for discovering, exploring, and managing productivity and focus apps. It provides detailed information about each app, including descriptions, ratings, reviews, download counts, sizes, and company names. Users can browse all applications, view individual app details, and get installation guidance.
